@@ -6,7 +6,7 @@ function (nodes, graph, combo.node)
     ii=nodes %in% nodes.all
     if(!all(ii)){
       anodes=nodes[!ii]
-      stop(paste("Nodes ", paste(anodes, collapse=", "), " are not part of the graph!", sep=""))
+      warning(paste("Nodes ", paste(anodes, collapse=", "), " are not part of the graph!", sep=""))
     }
 
 
